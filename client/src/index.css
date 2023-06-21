@@ -3,125 +3,24 @@
 @tailwind utilities;
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 360px;
-  margin: auto;
-  overflow: hidden;
+
+
+* > *{
   font-family: 'Quicksand', sans-serif;
-  
 }
 
+
+/* 
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: rgb(230, 236, 229);
   background-image: url('./assets/graphic3.svg');
   background-repeat: no-repeat;
   /* padding-top: auto; */
-  background-size: cover;
-}
+  /* background-size: cover; */
+ 
 
-.app{
-  background-image: url('./assets/graphic3.svg');
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.9s ease-in-out;
+  body{
+  background-image: url('./assets/Background.png');
 
-}
-
-.app.warm{
-  background-image: url('./assets/warm-bg.jpg');
-  /* color: #fff; */
-}
-
-main {
-  min-height: 100vh;
-  padding: 25px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0,0,0,0.75));
-
-}
-
-.search-box{
-  width: 100%;
-  margin: 0 0 75px;
-}
-.search-box .search-bar{
-  display: block;
-  width: 100%;
-  padding: 15px;
-
-  appearance: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
-  border: none;
-
-  background-color:rgba(245, 237, 237, 0.5);
-  border-radius: 10px 10px 10px 10px;
-  /* margin-top: -25px; */
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.3) ;
-}
-
-.search-box .search-bar:focus {
-  background-color: rgb(248, 244, 244);
-}
-
-.location-box .location {
-  color: rgb(243, 235, 235);
-  font-size:32px;
-  text-align: center;
-  font-weight: 500;
-  margin-left: -30px;
-  display: inline-block;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.4);
-}
-
-
-
-.location-box .date {
-  color: rgb(243, 235, 235);
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
-  margin-left: -30px;
-  text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.4);
-
-}
-
-.weather-box{
-  text-align: center;
-}
-.weather-box .temp {
-  position: relative;
-  display: inline-block;
-  margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  margin-left: -30px;
-  padding: 10px 15px;
-  color: rgb(243, 235, 235);
-  font-size: 102px;
-  text-align: center;
-  width: 220px;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.4);
-
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
-
-  font-weight: 800;
-
-}
-
-
-.weather-box .weather {
-  color: rgb(243, 235, 235);
-  font-size: 33px;
-  margin-left: -30px;
-
-  font-weight: 600;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.4);
-
-
-}
+  }
