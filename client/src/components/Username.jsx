@@ -7,6 +7,19 @@ import {useFormik} from 'formik'
 import styles from '../styles/Username.module.css'
 
 function Username() {
+
+
+  const formik = useFormik({
+    initialValues: {
+      username: ''
+    },
+    validateOnBlur: false,
+    validateOnChange: false,
+
+    onSubmit: async values => {
+      console.log(values)
+    }
+  })
   
   return (
     <div className="container mx-auto">
@@ -17,14 +30,14 @@ function Username() {
             <span className="py-4 text-xl w-2/3 text-center text-gray-500"> connect with us</span>
             
           </div>
-          <form action="" className="py-1">
+          <form action="" className="py-1" onSubmit={formik.handleSubmit}>
             <div className="profile flex justify-center py-4">
               <img src={avatar} className={styles.profile_img} alt="avatar" />
 
               </div>
 
               <div className="textbok flex flex-col items-center gap-6">
-                <input type="text" name="" className={styles.textbox}  placeholder='Username' id="" />
+                <input {...formik.getFieldProps('username')} type="text" name="username" className={styles.textbox}  placeholder='Username' id="" />
                 <button className={styles.btn} type='submit'>Lets Go!</button>
 
 
